@@ -87,7 +87,7 @@ Pour ignorer le fichier robots.txt pour toutes les requêtes, utilisez cette ver
 
 ### Autre option : Installation via Smithery
 
-Pour installer mcp-server-airbnb pour Claude Desktop automatiquement via [Smithery](https://smithery.ai/server/Domoteek/mcp-server-airbnb) :
+Pour installer mcp-server-airbnb pour Claude Desktop automatiquement via [Smithery](https://smithery.ai/server/@Domoteek/mcp-server-airbnb) :
 
 ```bash
 npx -y @smithery/cli install @Domoteek/mcp-server-airbnb --client claude
