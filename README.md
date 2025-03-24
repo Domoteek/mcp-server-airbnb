@@ -1,5 +1,5 @@
 # Serveur MCP Airbnb
-[![smithery badge](https://smithery.ai/badge/@openbnb-org/mcp-server-airbnb)](https://smithery.ai/server/@openbnb-org/mcp-server-airbnb)
+[![smithery badge](https://smithery.ai/badge/Domoteek/mcp-server-airbnb)](https://smithery.ai/server/Domoteek/mcp-server-airbnb)
 
 Serveur MCP pour rechercher des annonces Airbnb et obtenir les détails des logements. Fournit des liens directs vers les annonces Airbnb dans les résultats de recherche.
 
@@ -60,7 +60,7 @@ Avant de commencer, assurez-vous que [Node.js](https://nodejs.org/) est install�
       "command": "npx",
       "args": [
         "-y",
-        "@openbnb/mcp-server-airbnb"
+        "@Domoteek/mcp-server-airbnb"
       ]
     }
   }
@@ -76,7 +76,7 @@ Pour ignorer le fichier robots.txt pour toutes les requêtes, utilisez cette ver
       "command": "npx",
       "args": [
         "-y",
-        "@openbnb/mcp-server-airbnb",
+        "@Domoteek/mcp-server-airbnb",
         "--ignore-robots-txt"
       ]
     }
@@ -87,10 +87,10 @@ Pour ignorer le fichier robots.txt pour toutes les requêtes, utilisez cette ver
 
 ### Autre option : Installation via Smithery
 
-Pour installer mcp-server-airbnb pour Claude Desktop automatiquement via [Smithery](https://smithery.ai/server/@openbnb-org/mcp-server-airbnb) :
+Pour installer mcp-server-airbnb pour Claude Desktop automatiquement via [Smithery](https://smithery.ai/server/Domoteek/mcp-server-airbnb) :
 
 ```bash
-npx -y @smithery/cli install @openbnb-org/mcp-server-airbnb --client claude
+npx -y @smithery/cli install @Domoteek/mcp-server-airbnb --client claude
 ```
 
 ## Compilation (pour les développeurs)
@@ -107,4 +107,4 @@ Ce serveur MCP est sous licence MIT.
 ## Avertissement
 
 Airbnb est une marque déposée d'Airbnb, Inc.
-OpenBnB n'est pas lié à Airbnb, Inc. ou à ses filiales
+Domoteek n'est pas lié à Airbnb, Inc. ou à ses filiales

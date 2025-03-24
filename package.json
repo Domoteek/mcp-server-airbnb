@@ -1,10 +1,10 @@
 {
-  "name": "@openbnb/mcp-server-airbnb",
+  "name": "@domoteek/mcp-server-airbnb",
   "version": "0.1.0",
   "description": "MCP server for Airbnb search and listing details",
   "license": "MIT",
   "type": "module",
-  "author": "OpenBnB (https://openbnb.org)",
+  "author": "Domoteek",
   "keywords": [
 		"mcp",
 		"airbnb",
