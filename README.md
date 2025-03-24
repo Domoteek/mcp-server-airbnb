@@ -1,5 +1,5 @@
 # Serveur MCP Airbnb
-[![smithery badge](https://smithery.ai/badge/Domoteek/mcp-server-airbnb)](https://smithery.ai/server/Domoteek/mcp-server-airbnb)
+[![smithery badge](https://smithery.ai/badge/@Domoteek/mcp-server-airbnb)](https://smithery.ai/server/@Domoteek/mcp-server-airbnb)
 
 Serveur MCP pour rechercher des annonces Airbnb et obtenir les détails des logements. Fournit des liens directs vers les annonces Airbnb dans les résultats de recherche.
 
