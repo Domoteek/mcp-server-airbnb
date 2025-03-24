@@ -447,6 +447,7 @@ async function handleAirbnbListingDetails(params: any) {
         type: "text",
         text: JSON.stringify({
           listingUrl: listingUrl.toString(),
+          url: listingUrl.toString(),
           details: details
         }, null, 2)
       }],
