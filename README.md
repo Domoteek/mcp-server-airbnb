@@ -1,56 +1,57 @@
-# Airbnb MCP Server
+# Serveur MCP Airbnb
 [![smithery badge](https://smithery.ai/badge/@openbnb-org/mcp-server-airbnb)](https://smithery.ai/server/@openbnb-org/mcp-server-airbnb)
 
-MCP Server for searching Airbnb and get listing details.
+Serveur MCP pour rechercher des annonces Airbnb et obtenir les détails des logements. Fournit des liens directs vers les annonces Airbnb dans les résultats de recherche.
 
-## Tools
+## Outils
 
 1. `airbnb_search`
-   - Search for Airbnb listings
-   - Required Input: `location` (string)
-   - Optional Inputs:
-     - `placeId` (string)
-     - `checkin` (string, YYYY-MM-DD)
-     - `checkout` (string, YYYY-MM-DD)
-     - `adults` (number)
-     - `children` (number)
-     - `infants` (number)
-     - `pets` (number)
-     - `minPrice` (number)
-     - `maxPrice` (number)
-     - `cursor` (string)
-     - `ignoreRobotsText` (boolean)
-   - Returns: Array of listings with details like name, price, location, etc.
+   - Recherche d'annonces Airbnb
+   - Entrée requise : `location` (chaîne de caractères)
+   - Entrées optionnelles :
+     - `placeId` (chaîne de caractères)
+     - `checkin` (chaîne de caractères, AAAA-MM-JJ)
+     - `checkout` (chaîne de caractères, AAAA-MM-JJ)
+     - `adults` (nombre)
+     - `children` (nombre)
+     - `infants` (nombre)
+     - `pets` (nombre)
+     - `minPrice` (nombre)
+     - `maxPrice` (nombre)
+     - `cursor` (chaîne de caractères)
+     - `ignoreRobotsText` (booléen)
+   - Retourne : Tableau d'annonces avec des détails comme le nom, le prix, l'emplacement, etc. Chaque annonce inclut une `url` directe vers la page Airbnb.
 
 2. `airbnb_listing_details`
-   - Get detailed information about a specific Airbnb listing
-   - Required Input: `id` (string)
-   - Optional Inputs:
-     - `checkin` (string, YYYY-MM-DD)
-     - `checkout` (string, YYYY-MM-DD)
-     - `adults` (number)
-     - `children` (number)
-     - `infants` (number)
-     - `pets` (number)
-     - `ignoreRobotsText` (boolean)
-   - Returns: Detailed listing information including description, host details, amenities, pricing, etc.
+   - Obtenir des informations détaillées sur une annonce Airbnb spécifique
+   - Entrée requise : `id` (chaîne de caractères)
+   - Entrées optionnelles :
+     - `checkin` (chaîne de caractères, AAAA-MM-JJ)
+     - `checkout` (chaîne de caractères, AAAA-MM-JJ)
+     - `adults` (nombre)
+     - `children` (nombre)
+     - `infants` (nombre)
+     - `pets` (nombre)
+     - `ignoreRobotsText` (booléen)
+   - Retourne : Informations détaillées sur l'annonce, y compris la description, les détails de l'hôte, les équipements, les tarifs, etc. La réponse inclut une `url` directe vers la page de l'annonce Airbnb.
 
-## Features
+## Fonctionnalités
 
-- Respects Airbnb's robots.txt rules
-- Uses cheerio for HTML parsing
-- No API key required
-- Returns structured JSON data
-- Reduces context load by flattening and picking data
+- Respecte les règles du fichier robots.txt d'Airbnb
+- Utilise cheerio pour l'analyse HTML
+- Aucune clé API requise
+- Retourne des données JSON structurées
+- Réduit la charge de contexte en aplatissant et en sélectionnant les données
+- Fournit des URL directes vers les annonces Airbnb
 
-## Setup
+## Installation
 
+### Installation sur Claude Desktop
+Avant de commencer, assurez-vous que [Node.js](https://nodejs.org/) est installé sur votre ordinateur pour que `npx` fonctionne.
 
-### Installing on Claude Desktop
-Before starting make sure [Node.js](https://nodejs.org/) is installed on your desktop for `npx` to work.
-1. Go to: Settings > Developer > Edit Config
+1. Allez dans : Paramètres > Développeur > Modifier la configuration
 
-2. Add the following to your `claude_desktop_config.json`:
+2. Ajoutez ce qui suit à votre fichier `claude_desktop_config.json` :
 
 ```json
 {
@@ -66,7 +67,7 @@ Before starting make sure [Node.js](https://nodejs.org/) is installed on your de
 }
 ```
 
-To ignore robots.txt for all requests, use this version with `--ignore-robots-txt` args
+Pour ignorer le fichier robots.txt pour toutes les requêtes, utilisez cette version avec l'argument `--ignore-robots-txt` :
 
 ```json
 {
@@ -82,28 +83,28 @@ To ignore robots.txt for all requests, use this version with `--ignore-robots-tx
   }
 }
 ```
-3. Restart Claude Desktop and plan your next trip that include Airbnbs!
+3. Redémarrez Claude Desktop et planifiez votre prochain voyage incluant des Airbnbs !
 
-### Other Option: Installing via Smithery
+### Autre option : Installation via Smithery
 
-To install mcp-server-airbnb for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@openbnb-org/mcp-server-airbnb):
+Pour installer mcp-server-airbnb pour Claude Desktop automatiquement via [Smithery](https://smithery.ai/server/@openbnb-org/mcp-server-airbnb) :
 
 ```bash
 npx -y @smithery/cli install @openbnb-org/mcp-server-airbnb --client claude
 ```
 
-## Build (for devs)
+## Compilation (pour les développeurs)
 
 ```bash
 npm install
 npm run build
 ```
 
-## License
+## Licence
 
-This MCP server is licensed under the MIT License.
+Ce serveur MCP est sous licence MIT.
 
-## Disclaimer
+## Avertissement
 
-Airbnb is a trademark of Airbnb, Inc.
-OpenBnB is not related to Airbnb, Inc. or its subsidiaries
+Airbnb est une marque déposée d'Airbnb, Inc.
+OpenBnB n'est pas lié à Airbnb, Inc. ou à ses filiales
