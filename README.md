@@ -3,6 +3,10 @@
 
 Serveur MCP pour rechercher des annonces Airbnb et obtenir les détails des logements. Fournit des liens directs vers les annonces Airbnb dans les résultats de recherche.
 
+<a href="https://glama.ai/mcp/servers/@Domoteek/mcp-server-airbnb">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@Domoteek/mcp-server-airbnb/badge" alt="Airbnb Server MCP server" />
+</a>
+
 ## Outils
 
 1. `airbnb_search`
